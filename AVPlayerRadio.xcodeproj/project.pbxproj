@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,9 +12,14 @@
 		4A40CE4F22D6564D00471ECE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A40CE4D22D6564D00471ECE /* Main.storyboard */; };
 		4A40CE5122D6564E00471ECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A40CE5022D6564E00471ECE /* Assets.xcassets */; };
 		4A40CE5422D6564E00471ECE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A40CE5222D6564E00471ECE /* LaunchScreen.storyboard */; };
+		4A40CE6222D657F100471ECE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A40CE6122D657F100471ECE /* Alamofire.framework */; };
+		4A40CE6422D7A45A00471ECE /* Radio2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A40CE6322D7A45A00471ECE /* Radio2.swift */; };
+		F13C6C7243B1181CE1D95AA7 /* Pods_AVPlayerRadio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9F40BE38FD5FE866E3A5A5 /* Pods_AVPlayerRadio.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1374320A47DE67D3A27DFA1F /* Pods-AVPlayerRadio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVPlayerRadio.debug.xcconfig"; path = "Target Support Files/Pods-AVPlayerRadio/Pods-AVPlayerRadio.debug.xcconfig"; sourceTree = "<group>"; };
+		215B9C735A8BCBA5F563E538 /* Pods-AVPlayerRadio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVPlayerRadio.release.xcconfig"; path = "Target Support Files/Pods-AVPlayerRadio/Pods-AVPlayerRadio.release.xcconfig"; sourceTree = "<group>"; };
 		4A40CE4622D6564D00471ECE /* AVPlayerRadio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVPlayerRadio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A40CE4922D6564D00471ECE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A40CE4B22D6564D00471ECE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		4A40CE5022D6564E00471ECE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A40CE5322D6564E00471ECE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A40CE5522D6564E00471ECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A40CE6122D657F100471ECE /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A40CE6322D7A45A00471ECE /* Radio2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radio2.swift; sourceTree = "<group>"; };
+		4A9F40BE38FD5FE866E3A5A5 /* Pods_AVPlayerRadio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AVPlayerRadio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A40CE6222D657F100471ECE /* Alamofire.framework in Frameworks */,
+				F13C6C7243B1181CE1D95AA7 /* Pods_AVPlayerRadio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26EE02523AB0A86B81FB6FAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1374320A47DE67D3A27DFA1F /* Pods-AVPlayerRadio.debug.xcconfig */,
+				215B9C735A8BCBA5F563E538 /* Pods-AVPlayerRadio.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2B918977EC80500B4F715662 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A40CE6122D657F100471ECE /* Alamofire.framework */,
+				4A9F40BE38FD5FE866E3A5A5 /* Pods_AVPlayerRadio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4A40CE3D22D6564D00471ECE = {
 			isa = PBXGroup;
 			children = (
 				4A40CE4822D6564D00471ECE /* AVPlayerRadio */,
 				4A40CE4722D6564D00471ECE /* Products */,
+				26EE02523AB0A86B81FB6FAD /* Pods */,
+				2B918977EC80500B4F715662 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +86,7 @@
 			children = (
 				4A40CE4922D6564D00471ECE /* AppDelegate.swift */,
 				4A40CE4B22D6564D00471ECE /* ViewController.swift */,
+				4A40CE6322D7A45A00471ECE /* Radio2.swift */,
 				4A40CE4D22D6564D00471ECE /* Main.storyboard */,
 				4A40CE5022D6564E00471ECE /* Assets.xcassets */,
 				4A40CE5222D6564E00471ECE /* LaunchScreen.storyboard */,
@@ -71,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A40CE5822D6564E00471ECE /* Build configuration list for PBXNativeTarget "AVPlayerRadio" */;
 			buildPhases = (
+				C57EF1797EE98EC1BD6D8507 /* [CP] Check Pods Manifest.lock */,
 				4A40CE4222D6564D00471ECE /* Sources */,
 				4A40CE4322D6564D00471ECE /* Frameworks */,
 				4A40CE4422D6564D00471ECE /* Resources */,
+				7E83FFAC0F72E2DBB7AC0E37 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,11 +163,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7E83FFAC0F72E2DBB7AC0E37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AVPlayerRadio/Pods-AVPlayerRadio-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AVPlayerRadio/Pods-AVPlayerRadio-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AVPlayerRadio/Pods-AVPlayerRadio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C57EF1797EE98EC1BD6D8507 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AVPlayerRadio-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4A40CE4222D6564D00471ECE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A40CE6422D7A45A00471ECE /* Radio2.swift in Sources */,
 				4A40CE4C22D6564D00471ECE /* ViewController.swift in Sources */,
 				4A40CE4A22D6564D00471ECE /* AppDelegate.swift in Sources */,
 			);
@@ -280,6 +356,7 @@
 		};
 		4A40CE5922D6564E00471ECE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1374320A47DE67D3A27DFA1F /* Pods-AVPlayerRadio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +375,7 @@
 		};
 		4A40CE5A22D6564E00471ECE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 215B9C735A8BCBA5F563E538 /* Pods-AVPlayerRadio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
